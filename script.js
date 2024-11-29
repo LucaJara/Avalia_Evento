@@ -109,13 +109,13 @@ encerrarBtn.addEventListener('click', () => {
 
       // Limpar a imagem do localStorage
       localStorage.removeItem('logoEvento'); 
+      container.style.display = 'block';
+      avaliacaoDiv.style.display = 'none';
     }
   } else {
     alert("Senha incorreta. O evento não foi encerrado.");
   }
   
-  avaliacaoDiv.style.display = 'none';
-  container.style.display = 'block';
 });
 
 function downloadCSV(avaliacoes) {
