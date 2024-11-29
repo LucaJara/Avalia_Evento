@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
   <title>Avaliação de Eventos</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div id="container">
-    <input type="file" id="uploadImagem" accept="image/*"> 
-    <img id="logo" alt="Logo do Evento" src="logo-ufms.png"> 
-    <label for="uploadImagem">Escolher Imagem</label> 
+<div id="container">
+  <input type="file" id="uploadImagem" accept="image/*">
+  <img id="logo" alt="Logo do Evento" src="/imagens/logo-ufms.png">
+  <label for="uploadImagem">Escolher Imagem</label>
 
-    <h1>Avaliação de Eventos</h1>
+  <h1>Avaliação de Eventos</h1>
 
-    <input type="text" id="nomeEvento" placeholder="Digite o nome do evento">
-    <input type="text" id="responsavelEvento" placeholder="Digite o nome do responsável"> 
-    <input type="text" id="instituicaoEnsino" placeholder="Digite a instituição de ensino">
+  <input type="text" id="nomeEvento" placeholder="Digite o nome do evento">
+  <input type="text" id="responsavelEvento" placeholder="Digite o nome do responsável">
+  <input type="text" id="instituicaoEnsino" placeholder="Digite a instituição de ensino">
 
-    <button id="iniciarBtn">Iniciar Evento</button>
-    <button id="fullscreenBtn">Tela Cheia</button>
-  </div>
+  <button id="iniciarBtn">Iniciar Evento</button>
+  <button id="fullscreenBtn">Tela Cheia</button>
+</div>
 
-  <div id="avaliacao" style="display: none;">
-    <img id="logo" alt="Logo do Evento" src="logo-ufms.png"> 
-    <h2>Avalie o Evento</h2>
-    <button class="opcao" data-avaliacao="Péssimo">Péssimo</button>
-    <button class="opcao" data-avaliacao="Ruim">Ruim</button>
-    <button class="opcao" data-avaliacao="Neutro">Neutro</button>
-    <button class="opcao" data-avaliacao="Bom">Bom</button>
-    <button class="opcao" data-avaliacao="Ótimo">Ótimo</button>
-    <button id="encerrarBtn">Encerrar Evento</button>
-  </div>
+<div id="avaliacao" style="display: none;">
+  <img id="logo" alt="Logo do Evento" src="/imagens/logo-ufms.png">
+  <h2>Avalie o Evento</h2>
+  <img class="opcao" src="imagens/pessimo.png" alt="Péssimo" data-avaliacao="Péssimo">
+  <img class="opcao" src="imagens/ruim.png" alt="Ruim" data-avaliacao="Ruim">
+  <img class="opcao" src="imagens/neutro.png" alt="Neutro" data-avaliacao="Neutro">
+  <img class="opcao" src="imagens/bom.png" alt="Bom" data-avaliacao="Bom">
+  <img class="opcao" src="imagens/otimo.png" alt="Ótimo" data-avaliacao="Ótimo">
+  <button id="encerrarBtn">Encerrar Evento</button>
+</div>
 
-  <div id="mensagem" style="display: none;">
-    <p>Agradecemos sua avaliação!</p>
-  </div>
+<div id="mensagem" style="display: none;">
+  <p>Agradecemos sua avaliação!</p>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

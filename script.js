@@ -11,7 +11,6 @@ const uploadImagemInput = document.getElementById('uploadImagem');
 const logoImg = document.getElementById('logo');
 const container = document.getElementById('container');
 
-
 let avaliacoes = [];
 let senhaPadrao = "";
 let nomeEvento = "";
@@ -19,26 +18,29 @@ let responsavelEvento = "";
 let instituicaoEnsino = "";
 let urlImagemCarregada = ""; // Variável para armazenar a URL da imagem
 
+// Carregar a imagem do localStorage ao iniciar a aplicação
 const logoSalvo = localStorage.getItem('logoEvento');
 if (logoSalvo) {
-  const logoImg = document.getElementById('logo'); // Obter a referência da imagem
   logoImg.src = logoSalvo;
 }
 
+// Armazenar a referência do logo na div#avaliacao
+const logoAvaliacao = document.querySelector('#avaliacao #logo');
+
 
 iniciarBtn.addEventListener('click', () => {
-  nomeEvento = nomeEventoInput.value; 
-  while (nomeEvento === null || nomeEvento.trim() === "") {
+  nomeEvento = nomeEventoInput.value.trim();
+  while (nomeEvento === null || nomeEvento === "") {
     nomeEvento = prompt("O nome do evento não pode ser vazio. Digite o nome do evento:");
   }
 
-  responsavelEvento = responsavelEventoInput.value;
-  while (responsavelEvento === null || responsavelEvento.trim() === "") {
+  responsavelEvento = responsavelEventoInput.value.trim();
+  while (responsavelEvento === null || responsavelEvento === "") {
     responsavelEvento = prompt("O nome do responsável não pode ser vazio. Digite o nome do responsável:");
   }
 
-  instituicaoEnsino = instituicaoEnsinoInput.value;
-  while (instituicaoEnsino === null || instituicaoEnsino.trim() === "") {
+  instituicaoEnsino = instituicaoEnsinoInput.value.trim();
+  while (instituicaoEnsino === null || instituicaoEnsino === "") {
     instituicaoEnsino = prompt("A instituição de ensino não pode ser vazia. Digite a instituição de ensino:");
   }
 
@@ -47,9 +49,8 @@ iniciarBtn.addEventListener('click', () => {
     senhaPadrao = prompt("A senha não pode ser vazia. Defina a senha para encerrar o evento:");
   }
 
-  const logoAvaliacao = document.querySelector('#avaliacao #logo');
+  // Usar a referência armazenada
   logoAvaliacao.src = urlImagemCarregada;
-  
 
   avaliacaoDiv.style.display = 'block';
   container.style.display = 'none';
@@ -61,7 +62,7 @@ opcoesBtns.forEach(btn => {
     const data = new Date();
     avaliacoes.push({
       nomeEvento: nomeEvento,
-      responsavelEvento: responsavelEvento, 
+      responsavelEvento: responsavelEvento,
       instituicaoEnsino: instituicaoEnsino,
       dataEvento: data.toLocaleDateString(),
       horaResposta: data.toLocaleTimeString(),
@@ -77,10 +78,15 @@ opcoesBtns.forEach(btn => {
 });
 
 fullscreenBtn.addEventListener('click', () => {
-  if (document.fullscreenElement) {
-    document.exitFullscreen();
-  } else {
-    document.documentElement.requestFullscreen();
+  try {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      document.documentElement.requestFullscreen();
+    }
+  } catch (error) {
+    console.error("Erro ao ativar o modo de tela cheia:", error);
+    alert("O modo de tela cheia não é suportado neste dispositivo.");
   }
 });
 
@@ -103,18 +109,13 @@ encerrarBtn.addEventListener('click', () => {
 
       // Limpar a imagem do localStorage
       localStorage.removeItem('logoEvento'); 
-      console.log("Imagem removida do localStorage:", !localStorage.getItem('logoEvento')); // Verificar se a chave foi removida
-        }
-        // Redefinir o src da imagem para o padrão
-      const logoImg = document.getElementById('logo');
-      logoImg.src = "logo-ufms.png"; // Substitua pelo caminho da sua imagem inicial
-
-
-
-
+    }
   } else {
     alert("Senha incorreta. O evento não foi encerrado.");
   }
+  
+  avaliacaoDiv.style.display = 'none';
+  container.style.display = 'block';
 });
 
 function downloadCSV(avaliacoes) {
@@ -126,7 +127,10 @@ function downloadCSV(avaliacoes) {
   const encodedUri = encodeURI(csvContent);
   const link = document.createElement("a");
   link.setAttribute("href", encodedUri);
-  link.setAttribute("download", "avaliacoes_evento.csv");
+  //Utilizar o nome do evento para o nome do arquivo
+  const nomeArquivo = `${nomeEvento}.csv`; 
+  link.setAttribute("download", nomeArquivo); 
+  
   document.body.appendChild(link);
   link.click();
 }
@@ -148,3 +152,15 @@ uploadImagemInput.addEventListener('change', (event) => {
     reader.readAsDataURL(file);
   }
 });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js')
+      .then(function(registration) {
+        console.log('Service Worker registrado com sucesso:', registration);
+      })
+      .catch(function(error) {
+        console.log('Falha ao registrar o Service Worker:', error);
+      });
+  });
+}
