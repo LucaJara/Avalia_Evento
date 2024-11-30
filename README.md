@@ -1,3 +1,3 @@
 <h1 align=center>
-<img src="https://github.com/LucaJara/Avalia_Evento/issues/1#issue-2708272081" />
+<img src="https://github.com/user-attachments/assets/8a44b454-dc0f-4448-8c08-c4a423c4afe8" />
 </h1>
