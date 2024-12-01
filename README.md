@@ -24,8 +24,12 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 #### **Website**
 
   - **[Java Script](https://www.javascript.com/)**
+  - 
+## **:books: REFERÊNCIAS**
 
 ## **:page_with_curl: LICENÇA**
+
+  - **[Java Script](https://www.javascript.com/)**
 
 Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório. 
 
