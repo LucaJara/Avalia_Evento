@@ -14,9 +14,12 @@
     }
   ],
   "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#007bff",
+  "display": "fullscreen",
+  "background_color": "#0088B7",
+  "theme_color": "#0088B7",
+  "orientation": "landscape",
+
+
 
   "screenshots": [
     {
@@ -37,5 +40,6 @@
     "window-controls-overlay",
     "standalone"
   ]
+
 
 }

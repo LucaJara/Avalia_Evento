@@ -10,6 +10,10 @@ const instituicaoEnsinoInput = document.getElementById('instituicaoEnsino');
 const uploadImagemInput = document.getElementById('uploadImagem');
 const logoImg = document.getElementById('logo');
 const container = document.getElementById('container');
+const mensagemEvento = document.querySelector('#avaliacao h2'); 
+const logoOriginal = "imagens/ufms.png";
+
+
 
 let avaliacoes = [];
 let senhaPadrao = "";
@@ -51,8 +55,10 @@ iniciarBtn.addEventListener('click', () => {
 
   // Usar a referência armazenada
   logoAvaliacao.src = urlImagemCarregada;
+  mensagemEvento.textContent = `Deixe a sua avaliação para o evento ${nomeEvento}`; 
 
-  avaliacaoDiv.style.display = 'block';
+
+  avaliacaoDiv.style.display = '';
   container.style.display = 'none';
 });
 
@@ -61,7 +67,6 @@ opcoesBtns.forEach(btn => {
     const avaliacao = btn.dataset.avaliacao;
     const data = new Date();
     avaliacoes.push({
-      nomeEvento: nomeEvento,
       responsavelEvento: responsavelEvento,
       instituicaoEnsino: instituicaoEnsino,
       dataEvento: data.toLocaleDateString(),
@@ -72,7 +77,7 @@ opcoesBtns.forEach(btn => {
     mensagemDiv.style.display = 'block';
     setTimeout(() => {
       mensagemDiv.style.display = 'none';
-      avaliacaoDiv.style.display = 'block';
+      avaliacaoDiv.style.display = 'flex';
     }, 2000);
   });
 });
@@ -96,8 +101,7 @@ encerrarBtn.addEventListener('click', () => {
   if (senhaDigitada === senhaPadrao) {
     if (confirm("Deseja realmente encerrar a avaliação do evento?")) {
       downloadCSV(avaliacoes);
-      avaliacaoDiv.style.display = 'none';
-      container.style.display = 'block';
+      container.style.display = 'flex';
       avaliacoes = [];
       senhaPadrao = "";
       nomeEvento = ""; 
@@ -109,9 +113,9 @@ encerrarBtn.addEventListener('click', () => {
 
       // Limpar a imagem do localStorage
       localStorage.removeItem('logoEvento'); 
-      container.style.display = 'block';
-      avaliacaoDiv.style.display = 'none';
     }
+    avaliacaoDiv.style.display = 'none';
+    logoImg.src = logoOriginal;
   } else {
     alert("Senha incorreta. O evento não foi encerrado.");
   }
@@ -152,6 +156,11 @@ uploadImagemInput.addEventListener('change', (event) => {
     reader.readAsDataURL(file);
   }
 });
+
+
+// Chamar a função ao carregar a página
+window.addEventListener('DOMContentLoaded', bloquearOrientacaoPaisagem);
+
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
