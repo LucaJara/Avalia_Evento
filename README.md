@@ -15,11 +15,11 @@
 
 <!-- aqui vai ficar o banner do projeto -->
 
-## **:rocket: OBJETIVO**
+## **🎯 OBJETIVO**
 
 O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedback sobre eventos educacionais, oferecendo uma ferramenta prática e eficiente para professores e profissionais da educação. Seu objetivo principal é permitir que, por meio de um tablet, os educadores possam avaliar o grau de satisfação dos alunos em relação a eventos realizados, como palestras, workshops, aulas especiais, entre outros.o Avalia Evento visa otimizar o processo de avaliação de eventos educacionais, tornando-o mais acessível, eficiente e eficaz, contribuindo para o aprimoramento contínuo da experiência educacional.
 
-## **:computer: FERRAMENTAS**
+## **🧰 FERRAMENTAS**
 
 #### **Website**
 
@@ -32,6 +32,8 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 #### **Utilitários**
 
 - Protótipo: **[Figma](https://www.figma.com/)** &rarr; **<kbd>[Protótipo (Avalia Evento)](https://www.figma.com/file/</kbd>**
+
+## **💻: COMO UTILIZAR**
     
 ## **:books: REFERÊNCIAS**
 
@@ -44,7 +46,7 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório. 
 
 <h3 align="center">
-Feito com ❤️ por <a href="https://www.linkedin.com/in/luca-jara-agra/">Lucas Jara </a> e <a href="https://www.linkedin.com/in/jonatas-d-cardoso/">Jônatas D Cardoso </a>
+Feito com 🧠 por <a href="https://www.linkedin.com/in/luca-jara-agra/">Lucas Jara </a> e <a href="https://www.linkedin.com/in/jonatas-d-cardoso/">Jônatas D Cardoso </a>
 </h3>
 
 <!-- Badges -->
