@@ -1,5 +1,5 @@
 <h1 align=center>
-<img src="https://github.com/user-attachments/assets/8a44b454-dc0f-4448-8c08-c4a423c4afe8" />
+<img src="https://github.com/user-attachments/assets/60f2fc03-0982-46cd-9f8e-92ec9aed819a" /> 
   <p>Avaliando os Eventos Institucionais</p>
 </h1>
 <div align="center">
@@ -24,12 +24,22 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 #### **Website**
 
   - **[Java Script](https://www.javascript.com/)**
-  - 
+  - **[HTML](https://www.javascript.com/)**
+  - **[CSS](https://www.javascript.com/)**
+
+    
+  \* Veja o arquivo <kbd>[manifest.json](./manifest.json)</kbd>
+#### **Utilitários**
+
+- Protótipo: **[Figma](https://www.figma.com/)** &rarr; **<kbd>[Protótipo (Avalia Evento)](https://www.figma.com/file/</kbd>**
+    
 ## **:books: REFERÊNCIAS**
 
-## **:page_with_curl: LICENÇA**
+ - **[Java Script](https://www.javascript.com/)**
+  - **[HTML](https://www.javascript.com/)**
+  - **[CSS](https://www.javascript.com/)**
 
-  - **[Java Script](https://www.javascript.com/)**
+## **:page_with_curl: LICENÇA**
 
 Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório. 
 
