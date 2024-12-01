@@ -49,7 +49,7 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório. 
 
 <h3 align="center">
-Feito com 🧠 por <a href="https://www.linkedin.com/in/luca-jara-agra/">Lucas Jara </a> e <a href="https://www.linkedin.com/in/jonatas-d-cardoso/">Jônatas D Cardoso </a>
+Feito com 🧠 por <a href="https://www.linkedin.com/in/luca-jara-agra/">Luca Jara </a> e <a href="https://www.linkedin.com/in/jonatas-d-cardoso/">Jônatas D Cardoso </a>
 </h3>
 
 <!-- Badges -->
