@@ -15,6 +15,9 @@
 
 <!-- aqui vai ficar o banner do projeto -->
 
+<h4 align="center"> 🚧  FASE DO DESENVOLVIMENTO : 80% CONCLUIDO...  🚧
+</h4>
+
 ## **🎯 OBJETIVO**
 
 O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedback sobre eventos educacionais, oferecendo uma ferramenta prática e eficiente para professores e profissionais da educação. Seu objetivo principal é permitir que, por meio de um tablet, os educadores possam avaliar o grau de satisfação dos alunos em relação a eventos realizados, como palestras, workshops, aulas especiais, entre outros.o Avalia Evento visa otimizar o processo de avaliação de eventos educacionais, tornando-o mais acessível, eficiente e eficaz, contribuindo para o aprimoramento contínuo da experiência educacional.
