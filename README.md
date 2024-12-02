@@ -51,11 +51,20 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
   - **Passo 4 : Clique em Inciar Evento, a página te solicitará uma senha, guarde-a, ela será importante posteriormente para o encerramento do seu evento**
     
     <img src="https://github.com/user-attachments/assets/882bb97a-9af2-4f74-a67f-3665a696bca6" />
-
     
-    https://github.com/user-attachments/assets/ef758a0d-4d70-4a74-8210-307ec8c6ad8d
-    https://github.com/user-attachments/assets/00f23af7-14fe-44d9-a537-68eede017c83
-    https://github.com/user-attachments/assets/d694c1f2-2918-43a8-9153-6520ca1c89dc
+  - **As avaliações já estarão Disponíveis**
+    
+     <img src="https://github.com/user-attachments/assets/ef758a0d-4d70-4a74-8210-307ec8c6ad8d" />
+
+  - **Passo 5 : Caso queira encerrar a pesquisa, existem um botão escondido no lado superior direito da tela, clique nele e será solicitada a senha preenchida no Passo 4**
+
+    <img src="https://github.com/user-attachments/assets/00f23af7-14fe-44d9-a537-68eede017c83" />
+
+  - **Passo 6 : Ao encerrar o evento um arquivo CSV será disponibilizado para download, na planilha conterá as informaçõe de quantidades de votos e horários de votação**
+
+    <img src="https://github.com/user-attachments/assets/d694c1f2-2918-43a8-9153-6520ca1c89dc" />
+   
+   
     
    
 ## **:books: REFERÊNCIAS**
