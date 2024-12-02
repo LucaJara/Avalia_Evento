@@ -37,7 +37,8 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 ## **💻: COMO UTILIZAR**
   **NOTA : A PÁGINA FOI MODELADA PARA SER UTILIZADA POR DISPOSITIVO MÓVEL (TABLET), LOGO SUAS DIMENSÕES SE ALINHAM SOMENTE NESTE DISPOSITIVO)**
   - **Passo 1 : Acesse o Link [Avalia Evento](https://lucajara.github.io/Avalia_Evento/)**
-    <img src="" /> 
+    <img src="https://github.com/user-attachments/assets/22825d8d-c303-44a8-8d92-cc624a949614" />
+    
    
 ## **:books: REFERÊNCIAS**
 
