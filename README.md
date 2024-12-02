@@ -45,6 +45,7 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
     https://github.com/user-attachments/assets/882bb97a-9af2-4f74-a67f-3665a696bca6
     https://github.com/user-attachments/assets/ef758a0d-4d70-4a74-8210-307ec8c6ad8d
     https://github.com/user-attachments/assets/00f23af7-14fe-44d9-a537-68eede017c83
+    https://github.com/user-attachments/assets/d694c1f2-2918-43a8-9153-6520ca1c89dc
     
    
 ## **:books: REFERÊNCIAS**
