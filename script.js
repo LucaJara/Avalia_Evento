@@ -21,6 +21,7 @@ let nomeEvento = "";
 let responsavelEvento = "";
 let instituicaoEnsino = "";
 let urlImagemCarregada = ""; // Variável para armazenar a URL da imagem
+logoImg.src = logoOriginal;
 
 // Carregar a imagem do localStorage ao iniciar a aplicação
 const logoSalvo = localStorage.getItem('logoEvento');
@@ -44,9 +45,9 @@ iniciarBtn.addEventListener('click', () => {
   }
 
   instituicaoEnsino = instituicaoEnsinoInput.value.trim();
-  while (instituicaoEnsino === null || instituicaoEnsino === "") {
+  /*while (instituicaoEnsino === null || instituicaoEnsino === "") {
     instituicaoEnsino = prompt("A instituição de ensino não pode ser vazia. Digite a instituição de ensino:");
-  }
+  }*/
 
   senhaPadrao = prompt("Defina a senha para encerrar o evento:");
   while (senhaPadrao === null || senhaPadrao.trim() === "") {
@@ -58,7 +59,7 @@ iniciarBtn.addEventListener('click', () => {
   mensagemEvento.textContent = `Deixe a sua avaliação para o evento ${nomeEvento}`; 
 
 
-  avaliacaoDiv.style.display = '';
+  avaliacaoDiv.style.display = 'flex';
   container.style.display = 'none';
 });
 
@@ -115,11 +116,13 @@ encerrarBtn.addEventListener('click', () => {
       localStorage.removeItem('logoEvento'); 
     }
     avaliacaoDiv.style.display = 'none';
+    container.style.display = 'flex';
     logoImg.src = logoOriginal;
+
   } else {
     alert("Senha incorreta. O evento não foi encerrado.");
   }
-  
+
 });
 
 function downloadCSV(avaliacoes) {
