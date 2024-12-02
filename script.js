@@ -77,8 +77,6 @@ iniciarBtn.addEventListener('click', () => {
   }
 
   mensagemEvento.textContent = `Deixe a sua avaliação para o evento ${nomeEvento}`; 
-
-
   avaliacaoDiv.style.display = 'flex';
   container.style.display = 'none';
 });
@@ -95,11 +93,11 @@ opcoesBtns.forEach(btn => {
       avaliacao: avaliacao
     });
 
-    mensagemDiv.style.display = 'block';
+    mensagemDiv.style.display = 'flex';
     setTimeout(() => {
       mensagemDiv.style.display = 'none';
       avaliacaoDiv.style.display = 'flex';
-    }, 2000);
+    }, 1000);
   });
 });
 
@@ -135,8 +133,8 @@ encerrarBtn.addEventListener('click', () => {
       // Limpar a imagem do localStorage
       localStorage.removeItem('logoEvento'); 
     }
-    avaliacaoDiv.style.display = 'none';
     container.style.display = 'flex';
+    avaliacaoDiv.style.display = 'none';
     logoImg.src = logoOriginal;
 
   } else {
