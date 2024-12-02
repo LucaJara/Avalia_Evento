@@ -27,8 +27,8 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 #### **Website**
 
   - **[Java Script](https://www.javascript.com/)**
-  - **[HTML](https://www.javascript.com/)**
-  - **[CSS](https://www.javascript.com/)**
+  - **[HTML](https://www.w3schools.com/html/default.asp)**
+  - **[CSS](https://www.w3schools.com/css/default.asp)**
 
     
   \* Veja o arquivo <kbd>[manifest.json](./manifest.json)</kbd>
@@ -37,6 +37,8 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 ## **💻: COMO UTILIZAR**
   **NOTA : A PÁGINA FOI MODELADA PARA SER UTILIZADA POR DISPOSITIVO MÓVEL (TABLET), LOGO SUAS DIMENSÕES SE ALINHAM SOMENTE NESTE DISPOSITIVO)**
   - **Passo 1 : Acesse o Link [Avalia Evento](https://lucajara.github.io/Avalia_Evento/)**
+    <img src="" /> 
+   
 ## **:books: REFERÊNCIAS**
 
  - **[Java Script](https://www.w3schools.com/js/js_versions.asp)**
