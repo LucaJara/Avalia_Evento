@@ -37,12 +37,22 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 ## **💻: COMO UTILIZAR**
   **NOTA : A PÁGINA FOI MODELADA PARA SER UTILIZADA POR DISPOSITIVO MÓVEL (TABLET), LOGO SUAS DIMENSÕES SE ALINHAM SOMENTE NESTE DISPOSITIVO)**
   - **Passo 1 : Acesse o Link [Avalia Evento](https://lucajara.github.io/Avalia_Evento/)**
+    
     <img src="https://github.com/user-attachments/assets/22825d8d-c303-44a8-8d92-cc624a949614" />
+    
   - **Passo 2 : Preencha as informações do evento em questão**
+    
     <img src="https://github.com/user-attachments/assets/d85b9e88-c0fb-4e4f-8197-342f0f2ad7d9" />
+    
+  - **Passo 3 : Na opção "Selecionar logo" Escolha a capa do seu evento**
+    
+    <img src="https://github.com/user-attachments/assets/6cc5a635-549c-4d1d-91d0-4e0ca4d87a76" />
+    
+  - **Passo 4 : Clique em Inciar Evento, a página te solicitará uma senha, guarde-a, ela será importante posteriormente para o encerramento do seu evento**
+    
+    <img src="https://github.com/user-attachments/assets/882bb97a-9af2-4f74-a67f-3665a696bca6" />
 
-    https://github.com/user-attachments/assets/6cc5a635-549c-4d1d-91d0-4e0ca4d87a76
-    https://github.com/user-attachments/assets/882bb97a-9af2-4f74-a67f-3665a696bca6
+    
     https://github.com/user-attachments/assets/ef758a0d-4d70-4a74-8210-307ec8c6ad8d
     https://github.com/user-attachments/assets/00f23af7-14fe-44d9-a537-68eede017c83
     https://github.com/user-attachments/assets/d694c1f2-2918-43a8-9153-6520ca1c89dc
