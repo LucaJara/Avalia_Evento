@@ -35,27 +35,47 @@ const logoAvaliacao = document.querySelector('#avaliacao #logo');
 
 iniciarBtn.addEventListener('click', () => {
   nomeEvento = nomeEventoInput.value.trim();
-  while (nomeEvento === null || nomeEvento === "") {
+  while (nomeEvento === "" && nomeEvento !== null) { 
     nomeEvento = prompt("O nome do evento não pode ser vazio. Digite o nome do evento:");
+    if (nomeEvento === null) {
+      return;
+  }
   }
 
+
   responsavelEvento = responsavelEventoInput.value.trim();
-  while (responsavelEvento === null || responsavelEvento === "") {
+  while (responsavelEvento === "" && responsavelEvento !== null ) {
     responsavelEvento = prompt("O nome do responsável não pode ser vazio. Digite o nome do responsável:");
+    if (nomeEvento === null) {
+      return;
+  }    
   }
 
   instituicaoEnsino = instituicaoEnsinoInput.value.trim();
-  /*while (instituicaoEnsino === null || instituicaoEnsino === "") {
+  while (instituicaoEnsino === "" && instituicaoEnsino !== null) {
     instituicaoEnsino = prompt("A instituição de ensino não pode ser vazia. Digite a instituição de ensino:");
-  }*/
+    if (instituicaoEnsino === null) {
+      return;
+  }    
+  }
 
   senhaPadrao = prompt("Defina a senha para encerrar o evento:");
-  while (senhaPadrao === null || senhaPadrao.trim() === "") {
+  while (senhaPadrao.trim() !== "" && senhaPadrao === null) {
     senhaPadrao = prompt("A senha não pode ser vazia. Defina a senha para encerrar o evento:");
+    if (senhaPadrao === null) {
+      return;
+  }    
   }
 
   // Usar a referência armazenada
-  logoAvaliacao.src = urlImagemCarregada;
+  if (urlImagemCarregada === "") {
+    // Se não selecionou, usar a imagem padrão
+    logoAvaliacao.src = logoOriginal;
+  } else {
+    // Se selecionou, usar a imagem carregada
+    logoAvaliacao.src = urlImagemCarregada;
+  }
+
   mensagemEvento.textContent = `Deixe a sua avaliação para o evento ${nomeEvento}`; 
 
 
@@ -127,9 +147,9 @@ encerrarBtn.addEventListener('click', () => {
 
 function downloadCSV(avaliacoes) {
   const csvContent = "data:text/csv;charset=utf-8," 
-    + "Nome do Evento,Responsável pelo Evento,Instituição de Ensino,Data do evento,Hora da resposta,Avaliação realizada\n" 
+    + "Responsável pelo Evento,Instituição de Ensino,Data do evento,Hora da resposta,Avaliação realizada\n" 
     + avaliacoes.map(item => 
-      `${item.nomeEvento},${item.responsavelEvento},${item.instituicaoEnsino},${item.dataEvento},${item.horaResposta},${item.avaliacao}`).join("\n");
+      `${item.responsavelEvento},${item.instituicaoEnsino},${item.dataEvento},${item.horaResposta},${item.avaliacao}`).join("\n");
 
   const encodedUri = encodeURI(csvContent);
   const link = document.createElement("a");
