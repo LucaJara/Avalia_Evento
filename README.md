@@ -15,7 +15,7 @@
 
 <!-- aqui vai ficar o banner do projeto -->
 
-<h4 align="center"> 🚧  FASE DO DESENVOLVIMENTO : 80% CONCLUIDO...  🚧
+<h4 align="center"> FASE DO DESENVOLVIMENTO : CONCLUIDO ✅
 </h4>
 
 ## **🎯 OBJETIVO**
@@ -32,24 +32,23 @@ O Avalia Evento é um aplicativo desenvolvido para facilitar a coleta de feedbac
 
     
   \* Veja o arquivo <kbd>[manifest.json](./manifest.json)</kbd>
-#### **Utilitários**
 
-- Protótipo: **[Figma](https://www.figma.com/)** &rarr; **<kbd>[Protótipo (Avalia Evento)](https://www.figma.com/file/</kbd>**
 
 ## **💻: COMO UTILIZAR**
-    
+  **NOTA : A PÁGINA FOI MODELADA PARA SER UTILIZADA POR DISPOSITIVO MÓVEL (TABLET), LOGO SUAS DIMENSÕES SE ALINHAM SOMENTE NESTE DISPOSITIVO)**
+  - **Passo 1 : Acesse o Link [Avalia Evento](https://lucajara.github.io/Avalia_Evento/)**
 ## **:books: REFERÊNCIAS**
 
- - **[Java Script](https://www.javascript.com/)**
-  - **[HTML](https://www.javascript.com/)**
-  - **[CSS](https://www.javascript.com/)**
+ - **[Java Script](https://www.w3schools.com/js/js_versions.asp)**
+  - **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
+  - **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
 
 ## **:page_with_curl: LICENÇA**
 
 Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório. 
 
 <h3 align="center">
-Feito com 🧠 por <a href="https://www.linkedin.com/in/luca-jara-agra/">Luca Jara </a>, <a href="https://www.linkedin.com/in/jonatas-d-cardoso/">Jônatas D Cardoso </a> e Matheus Vicente de Oliveira.
+Feito com 🧠 por <a href="https://www.linkedin.com/in/luca-jara-agra/">Luca Jara </a>, <a href="https://www.linkedin.com/in/jonatas-d-cardoso/">Jônatas D Cardoso </a> e <a href="https://www.linkedin.com/in/xxx/"> Matheus Vicente de Oliveira.
 </h3>
 
 <!-- Badges -->
