@@ -32,7 +32,9 @@ if (logoSalvo) {
 // Armazenar a referência do logo na div#avaliacao
 const logoAvaliacao = document.querySelector('#avaliacao #logo');
 
-
+// Botão de iniciar evento, realiza a validação dos campos obrigatórios e apresenta uma popup para preenchimento, caso ainda não tenha sido preenchido
+// Laço para validar a tentativa de criar evento sem os campos obrigatórios preenchidos
+// if para validar se caso o campo estiver em branco, ao cancelar o popup de texto será fechado
 iniciarBtn.addEventListener('click', () => {
   nomeEvento = nomeEventoInput.value.trim();
   while (nomeEvento === "" && nomeEvento !== null) { 
@@ -41,7 +43,6 @@ iniciarBtn.addEventListener('click', () => {
       return;
   }
   }
-
 
   responsavelEvento = responsavelEventoInput.value.trim();
   while (responsavelEvento === "" && responsavelEvento !== null ) {
@@ -81,6 +82,7 @@ iniciarBtn.addEventListener('click', () => {
   container.style.display = 'none';
 });
 
+// logica para armazenar as respostas inseridas e apresentar a mensagem de avaliação do evento
 opcoesBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const avaliacao = btn.dataset.avaliacao;
@@ -101,6 +103,7 @@ opcoesBtns.forEach(btn => {
   });
 });
 
+// função para habilitar a tela inteira na execução PWA
 fullscreenBtn.addEventListener('click', () => {
   try {
     if (document.fullscreenElement) {
@@ -114,6 +117,7 @@ fullscreenBtn.addEventListener('click', () => {
   }
 });
 
+// Função para encerrar o evento, executada somente caso inserida a senha correta
 encerrarBtn.addEventListener('click', () => {
   const senhaDigitada = prompt("Digite a senha para encerrar o evento:");
 
@@ -143,9 +147,10 @@ encerrarBtn.addEventListener('click', () => {
 
 });
 
+// função para exportar o CSV com as avaliações realizadas
 function downloadCSV(avaliacoes) {
   const csvContent = "data:text/csv;charset=utf-8," 
-    + "Responsável pelo Evento,Instituição de Ensino,Data do evento,Hora da resposta,Avaliação realizada\n" 
+    + "Responsavel pelo Evento,Instituicao de Ensino,Data do evento,Hora da resposta,Avaliacao realizada\n" 
     + avaliacoes.map(item => 
       `${item.responsavelEvento},${item.instituicaoEnsino},${item.dataEvento},${item.horaResposta},${item.avaliacao}`).join("\n");
 
@@ -159,6 +164,7 @@ function downloadCSV(avaliacoes) {
   document.body.appendChild(link);
   link.click();
 }
+//função para selecionar a imagem referente ao logo do evento
 
 uploadImagemInput.addEventListener('change', (event) => {
   const file = event.target.files[0];
@@ -177,4 +183,3 @@ uploadImagemInput.addEventListener('change', (event) => {
     reader.readAsDataURL(file);
   }
 });
-
